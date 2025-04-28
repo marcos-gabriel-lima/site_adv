@@ -1,0 +1,341 @@
+/* Estilos gerais para seções */
+.section {
+  padding: 4rem 0; /* Aumenta o espaçamento vertical */
+}
+
+.section:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Cabeçalho da seção */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: clamp(2rem, 5vw, 2.5rem); /* Fonte fluida */
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.section-header p {
+  font-size: clamp(1rem, 2.5vw, 1.1rem); /* Fonte fluida */
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Rodapé da seção (para botões) */
+.section-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+/* Seção Sobre */
+.sobre-section {
+  background-color: var(--background-color); /* Fundo branco padrão */
+}
+
+.sobre-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1000px; /* Limita a largura máxima do conteúdo */
+}
+
+.sobre-text h2 {
+  font-size: clamp(1.8rem, 4vw, 2.2rem); /* Fonte fluida */
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.sobre-text .destaque {
+  font-size: clamp(1.1rem, 3vw, 1.2rem); /* Fonte fluida */
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.sobre-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.sobre-text .button {
+  margin-top: 1rem;
+}
+
+.sobre-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Placeholder para imagem (substituir por OptimizedImage) */
+.image-placeholder {
+  width: 300px;
+  height: 300px;
+  max-width: 100%; /* Adicionado para evitar overflow horizontal */
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a0a0a0;
+  margin-left: auto; /* Adicionado para centralizar quando encolher */
+  margin-right: auto; /* Adicionado para centralizar quando encolher */
+}
+
+.image-placeholder i {
+  font-size: 5rem;
+}
+
+/* Seção Áreas de Atuação */
+.areas-section {
+  background-color: var(--light-background);
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Layout responsivo */
+  gap: 2rem;
+  margin-bottom: 2rem; /* Espaço antes do botão "Ver todas" */
+}
+
+/* Seção Diferenciais */
+.diferenciais-section {
+  background-color: #f9f9f9; /* Cor de fundo sutil */
+}
+
+.diferenciais-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Seção Depoimentos */
+.depoimentos-section {
+  position: relative;
+  padding: 5rem 0; /* Mais espaçamento vertical */
+}
+
+/* Opcional: adiciona um pseudo-elemento para decoração */
+.depoimentos-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  /* background: linear-gradient(to bottom, rgba(249, 249, 249, 0.8), transparent); */
+  /* z-index: -1; */
+}
+
+.depoimentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.depoimento-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.depoimento-rating {
+  margin-bottom: 1rem;
+  color: var(--warning-color); /* Cor para estrelas */
+  text-align: left;
+}
+
+.depoimento-rating i {
+  color: #ffc107; /* Amarelo para estrelas */
+  margin-right: 2px;
+}
+
+.depoimento-texto {
+  font-style: italic;
+  font-size: clamp(0.95rem, 2.2vw, 1.05rem); /* Fonte fluida */
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  position: relative;
+  padding-left: 2rem; /* Espaço para aspas */
+}
+
+/* Adiciona aspas decorativas */
+.depoimento-texto::before {
+  content: '\201C'; /* Aspas esquerdas */
+  font-size: 3rem;
+  color: var(--primary-color-light);
+  position: absolute;
+  left: 0;
+  top: -0.5rem;
+  line-height: 1;
+}
+
+.depoimento-autor {
+  text-align: right;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.depoimento-autor cite {
+  font-style: normal;
+}
+
+/* Seção Contato */
+.contato-section {
+  background-color: var(--primary-color-darker); /* Fundo mais escuro */
+  color: #fff; /* Texto claro */
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start; /* Alinha ao topo */
+}
+
+.contato-info h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.contato-info p {
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  color: #e0e0e0;
+}
+
+.contato-metodos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contato-metodo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contato-metodo i {
+  font-size: 1.5rem;
+  color: var(--primary-color-light); /* Ícones com cor clara */
+  width: 30px; /* Garante alinhamento */
+  text-align: center;
+}
+
+.contato-metodo h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+  color: #fff;
+}
+
+.contato-metodo p,
+.contato-metodo a,
+.contato-metodo address {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.contato-metodo a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Responsividade para a Home */
+@media (max-width: 992px) {
+  /* Ajustes para tablets */
+  .sobre-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .sobre-image {
+    order: -1; /* Move a imagem para cima em telas menores */
+    margin-bottom: 2rem;
+  }
+
+  .contato-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Ajustes para mobile */
+  .section {
+    padding: 3rem 0;
+  }
+
+  .areas-grid,
+  .diferenciais-grid,
+  .depoimentos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-placeholder {
+    width: 250px;
+    height: 250px;
+    /* max-width: 100%; já está na regra base */
+  }
+
+  .depoimento-texto::before {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Ajustes menores para mobile */
+  .section {
+    padding: 2rem 0;
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .contato-info h2 {
+    font-size: 1.8rem;
+  }
+} 

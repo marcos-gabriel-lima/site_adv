@@ -1,0 +1,70 @@
+# .cursorignore
+
+# Arquivos de ambiente e configuração
+.env
+.env.*
+*.env.local
+*.env.development
+*.env.test
+*.env.production
+
+# Arquivos de credenciais e segredos
+**/secrets.*
+**/credentials.*
+**/password.*
+**/*secret*
+**/*credential*
+**/*password*
+**/*token*
+**/*key*
+**/*.pem
+**/*.key
+**/*.cert
+**/*.crt
+
+# Diretórios de dependências e build
+node_modules/
+dist/
+build/
+.cache/
+.output/
+
+# Arquivos de log
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos temporários
+tmp/
+temp/
+.tmp/
+.temp/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos de IDE e editores (exceto configurações do Cursor)
+.idea/
+.vscode/
+*.sublime-*
+*.swp
+*.swo
+
+# Arquivos de banco de dados
+*.sqlite
+*.db
+*.sql
+
+# Arquivos de backup
+*.bak
+*.backup
+*~
+*.old
+
+# Arquivos pessoais
+TODO.md
+NOTES.md

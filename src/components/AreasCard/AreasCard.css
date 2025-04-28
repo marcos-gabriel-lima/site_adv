@@ -1,0 +1,69 @@
+.area-card {
+  background-color: var(--background-color);
+  padding: var(--spacing-md);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  display: flex; /* Usar flexbox para alinhar conteúdo */
+  flex-direction: column; /* Empilhar verticalmente */
+  height: 100%; /* Fazer o card ocupar a altura disponível no grid */
+}
+
+.area-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.area-icon {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(52, 152, 219, 0.1); /* Cor de fundo suave */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-sm);
+  flex-shrink: 0; /* Evitar que o ícone encolha */
+}
+
+.area-icon i {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.area-card h3 {
+  margin-bottom: var(--spacing-xs);
+  color: var(--primary-color);
+  font-size: clamp(1.1rem, 3vw, 1.3rem); /* Fonte fluida */
+  line-height: 1.3;
+}
+
+.area-card p {
+  margin-bottom: var(--spacing-sm);
+  font-size: clamp(0.9rem, 2vw, 1rem); /* Fonte fluida */
+  color: var(--text-color);
+  flex-grow: 1; /* Faz o parágrafo ocupar espaço disponível */
+  line-height: 1.5;
+}
+
+.area-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-top: auto; /* Empurra o link para baixo */
+  text-decoration: none;
+}
+
+.area-link i {
+  margin-left: 0.5rem;
+  transition: transform var(--transition-fast);
+}
+
+.area-link:hover {
+  color: var(--primary-color);
+}
+
+.area-link:hover i {
+  transform: translateX(3px);
+} 

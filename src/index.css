@@ -1,0 +1,138 @@
+/* Reset e estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden; /* Prevenir rolagem horizontal na página */
+}
+
+:root {
+  /* Variáveis de cores - personalize conforme sua identidade visual */
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --light-text: #f8f9fa;
+  --background-color: #ffffff;
+  --light-background: #f8f9fa;
+  --border-color: #e0e0e0;
+  
+  /* Variáveis de tipografia */
+  --heading-font: 'Playfair Display', serif;
+  --body-font: 'Raleway', sans-serif;
+  
+  /* Variáveis de espaçamento */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 5rem;
+  
+  /* Variáveis de sombras */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+  
+  /* Variáveis de transições */
+  --transition-fast: 0.3s ease;
+  --transition-normal: 0.5s ease;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: clamp(1rem, 2.5vw, 1.1rem); /* Fonte base fluida */
+  color: var(--text-color);
+  line-height: 1.6;
+  background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-sm);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+button, .button {
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  font-family: var(--body-font);
+  font-weight: 600;
+  transition: background-color var(--transition-fast);
+}
+
+button:hover, .button:hover {
+  background-color: var(--secondary-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.main-content {
+  min-height: 70vh;
+}
+
+/* Utilitários */
+.text-center {
+  text-align: center;
+}
+
+.mb-1 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.mb-2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.mb-3 {
+  margin-bottom: var(--spacing-md);
+}
+
+.mb-4 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.mb-5 {
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Responsividade base */
+@media (max-width: 768px) {
+  :root {
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Estilos adicionais do tutorial (Loading e ErrorBoundary) serão adicionados depois */ 

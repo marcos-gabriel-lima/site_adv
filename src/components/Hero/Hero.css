@@ -1,0 +1,88 @@
+.hero {
+  /* Ajuste a altura conforme necessário */
+  min-height: 70vh; 
+  /* Usar uma imagem de fundo padrão ou cor sólida se nenhuma for fornecida */
+  background-color: var(--primary-color); /* Cor de fallback */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  color: var(--light-text);
+  padding: var(--spacing-xl) 0; /* Espaçamento interno */
+  text-align: center; /* Centraliza texto por padrão */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Gradiente mais sutil ou cor sólida com opacidade */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)); 
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px; /* Limita a largura do conteúdo */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 3.5rem); /* Tamanho de fonte responsivo */
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.2;
+  color: var(--light-text); /* Garante cor clara sobre overlay */
+}
+
+.hero-subtitle { /* Usar classe específica para subtítulo */
+  font-size: clamp(1rem, 3vw, 1.25rem); /* Tamanho de fonte responsivo */
+  margin-bottom: var(--spacing-md);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9; /* Leve transparência */
+}
+
+.hero-button {
+  /* Estilo herdado da classe .button global */
+  /* Adicionar estilos específicos se necessário */
+  background-color: var(--secondary-color);
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  margin-top: var(--spacing-sm);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+  text-decoration: none; /* Garantir sem sublinhado */
+  display: inline-block; /* Para aplicar padding e margin */
+  width: auto; /* Resetar largura total do botão */
+}
+
+.hero-button:hover {
+  background-color: var(--primary-color); 
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+    text-align: center; /* Manter centralizado */
+  }
+  
+  .hero-content {
+      padding: 0 var(--spacing-sm);
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+      min-height: 50vh;
+  }
+
+  .hero-button {
+      /* Opcional: tornar botão largura total no mobile */
+      /* width: 100%; */
+  }
+} 

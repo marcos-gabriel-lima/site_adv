@@ -1,0 +1,51 @@
+# Windows PowerShell Command Rules
+# Este arquivo garante que todos os comandos shell sejam compatíveis com o Windows PowerShell
+
+## Substituições de Comandos
+Ao sugerir comandos shell, use estes equivalentes do PowerShell:
+- Use ponto e vírgula (;) em vez de && para encadear comandos
+- Use -and em vez de && para operações lógicas
+- Use -or em vez de || para operações lógicas
+- Use New-Item -ItemType Directory -Path em vez de mkdir
+- Use Remove-Item em vez de rm
+- Use Remove-Item -Recurse -Force em vez de rm -rf
+- Use New-Item -ItemType File -Path em vez de touch
+- Use Get-ChildItem em vez de ls
+- Use Copy-Item em vez de cp
+- Use Move-Item em vez de mv
+- Use Get-Content em vez de cat
+- Use Write-Output em vez de echo
+- Use $PWD em vez de pwd
+- Use Set-Location em vez de cd
+- Use Select-String em vez de grep
+- Use Set-ItemProperty em vez de chmod
+- Use $env: prefixo para variáveis de ambiente
+- Use . em vez de source
+- Use Get-Command em vez de which
+- Use New-Item -ItemType SymbolicLink -Path em vez de ln -s
+
+## Convenções de Caminho
+- Use separadores de caminho no estilo Windows (barras invertidas)
+- Converta barras para barras invertidas em caminhos
+- Use ponto e vírgula (;) para separadores de caminho em variáveis de ambiente
+
+## Variáveis de Ambiente
+- Sempre use o prefixo $env: para variáveis de ambiente
+- Exemplo: $env:PATH, não $PATH
+
+## Operações de Arquivo
+- Use caminhos no estilo Windows
+- Use os cmdlets apropriados do PowerShell para operações de arquivo
+- Garanta o tratamento adequado de erros com blocos try/catch do PowerShell
+
+## Execução de Script
+- Use npm run para scripts npm
+- Use yarn para comandos yarn
+- Use pnpm para comandos pnpm
+
+## Aplica-se a
+*.ps1
+*.psm1
+*.psd1
+infra/**/*
+scripts/**/*

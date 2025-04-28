@@ -1,0 +1,33 @@
+/* src/pages/Contato/Contato.css */
+
+.contato-page .section-header {
+  margin-bottom: var(--spacing-lg); /* Aumentar espaço após o header */
+}
+
+.contato-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas por padrão */
+  gap: var(--spacing-lg);
+  align-items: start;
+  padding-bottom: var(--spacing-xl); /* Espaço extra no final da página */
+}
+
+.contato-info-placeholder {
+  /* Estilos para o bloco de informações de contato - pode ser refinado */
+  padding: var(--spacing-md);
+  background-color: var(--light-background);
+  border-radius: 8px;
+}
+
+.contato-info-placeholder h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  .contato-content {
+    grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    gap: var(--spacing-md);
+  }
+} 

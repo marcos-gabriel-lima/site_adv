@@ -1,0 +1,174 @@
+{
+  // Configurações de Segurança
+  "security.workspace.trust.enabled": true,
+  "security.workspace.trust.startupPrompt": "always",
+  "security.workspace.trust.banner": "always",
+  "security.workspace.trust.untrustedFiles": "prompt",
+  "security.workspace.trust.emptyWindow": true,
+  
+  // Verificação de Extensões
+  "extensions.verifySignature": true,
+  "extensions.autoUpdate": true,
+  "extensions.autoCheckUpdates": true,
+  
+  // Modo de Privacidade
+  "privacy.mode": true,
+  "privacy.telemetry.enabled": false,
+  "privacy.enableCrashReporter": false,
+  "privacy.enableTelemetry": false,
+  "privacy.enableFeedbackSurvey": false,
+  
+  // Prevenção de Vazamento de Dados
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.env": true,
+    "**/.env.*": true,
+    "**/secrets.*": true,
+    "**/credentials.*": true,
+    "**/password.*": true
+  },
+  
+  // Configurações de Arquivo
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.hg/store/**": true
+  },
+  "files.associations": {
+    "*.env": "dotenv",
+    "*.config": "json"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  
+  // Configurações de Editor
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.detectIndentation": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.suggestSelection": "first",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  
+  // Configurações de Terminal
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.gpuAcceleration": "auto",
+  "terminal.integrated.scrollback": 5000,
+  
+  // Configurações de Desempenho
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 10,
+  "workbench.editor.restoreViewState": true,
+  "workbench.list.smoothScrolling": true,
+  "workbench.tree.indent": 8,
+  "workbench.tree.renderIndentGuides": "always",
+  
+  // Configurações de Rede
+  "http.proxySupport": "on",
+  "http.proxyStrictSSL": true,
+  "http.systemCertificates": true,
+  
+  // Configurações de Cursor AI
+  "cursor.ai.privacy.enabled": true,
+  "cursor.ai.privacy.dataCollection": "minimal",
+  "cursor.ai.contextLength": "medium",
+  "cursor.ai.responseLength": "concise",
+  "cursor.ai.autoSuggest": true,
+  "cursor.ai.autoComplete": true,
+  
+  // Domínios permitidos para comunicação
+  "cursor.allowedDomains": [
+    "api2.cursor.sh",
+    "api3.cursor.sh",
+    "repo42.cursor.sh",
+    "api4.cursor.sh",
+    "us-asia.gcpp.cursor.sh",
+    "us-eu.gcpp.cursor.sh",
+    "us-only.gcpp.cursor.sh",
+    "marketplace.cursorapi.com",
+    "cursor-cdn.com"
+  ],
+  
+  // Configurações de Git
+  "git.autofetch": true,
+  "git.confirmSync": true,
+  "git.enableSmartCommit": true,
+  "git.enableCommitSigning": true,
+  "git.fetchOnPull": true,
+  "git.inputValidation": "always",
+  "git.showPushSuccessNotification": true,
+  
+  // Configurações de Depuração
+  "debug.console.fontSize": 14,
+  "debug.toolBarLocation": "docked",
+  "debug.inlineValues": true,
+  "debug.allowBreakpointsEverywhere": false,
+  
+  // Configurações de Pesquisa
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true
+  },
+  "search.useGlobalIgnoreFiles": true,
+  "search.useIgnoreFiles": true,
+  
+  // Configurações de Linguagem
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggest.completeFunctionCalls": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  
+  // Configurações de Linting
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.run": "onSave",
+  "eslint.format.enable": true,
+  
+  // Configurações de Memória e Desempenho
+  "files.restoreUndoStack": false,
+  "workbench.enableExperiments": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.commandPalette.history": 50,
+  "workbench.commandPalette.preserveInput": false,
+  
+  // Configurações de Atualização
+  "update.mode": "manual",
+  "update.showReleaseNotes": true,
+  
+  // Configurações de Segurança Adicional
+  "security.allowedUNCHosts": [],
+  "security.restrictUNCAccess": true,
+  
+  // Configurações de Sincronização
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.forceDownload": false,
+  "sync.forceUpload": false,
+  "sync.keybindingsPerPlatform": true,
+  
+  // Configurações de Notificação
+  "notification.alwaysShowBadge": true,
+  "notification.focusWindow": false,
+  "notification.timeout": 5
+}

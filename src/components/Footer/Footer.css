@@ -1,0 +1,148 @@
+.footer {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  padding: var(--spacing-lg) 0 var(--spacing-sm);
+  margin-top: var(--spacing-xl); /* Garante espaço acima do footer */
+}
+
+.footer-grid {
+  display: grid;
+  /* Ajustado para 2 colunas em telas médias e 1 em pequenas */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.footer h3, .footer h4 {
+  color: var(--light-text);
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+  font-size: 1.2rem; /* Tamanho um pouco maior */
+}
+
+/* Linha decorativa abaixo dos títulos h4 */
+.footer h4::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--secondary-color);
+}
+
+.footer-info p {
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.6;
+  opacity: 0.9; /* Leve transparência */
+}
+
+.social-links {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Aumentado */
+  height: 40px; /* Aumentado */
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--light-text);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+  font-size: 1.1rem; /* Ícone um pouco maior */
+}
+
+.social-links a:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-3px); /* Efeito sutil ao passar o mouse */
+}
+
+.footer-links ul, .footer-areas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li, .footer-areas li {
+  margin-bottom: 0.75rem; /* Espaçamento ajustado */
+}
+
+.footer-links a, .footer-areas a {
+  color: var(--light-text);
+  opacity: 0.8;
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+
+.footer-links a:hover, .footer-areas a:hover {
+  opacity: 1;
+  color: var(--secondary-color);
+}
+
+.footer-contact address {
+  font-style: normal;
+  line-height: 1.8;
+}
+
+.footer-contact p {
+  margin-bottom: 0.5rem; /* Espaçamento entre linhas do endereço */
+  display: flex; /* Alinha ícone e texto */
+  align-items: flex-start; /* Alinha ícone no topo */
+}
+
+.footer-contact i {
+  margin-right: 0.75rem; /* Espaçamento do ícone aumentado */
+  color: var(--secondary-color);
+  width: 18px; /* Largura fixa para alinhamento */
+  text-align: center; /* Centraliza ícone */
+  margin-top: 2px; /* Ajuste fino vertical */
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--spacing-sm);
+  margin-top: var(--spacing-lg); /* Espaço acima da linha */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.footer-legal {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.footer-legal a {
+  color: var(--light-text);
+  opacity: 0.8;
+}
+
+.footer-legal a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Responsividade já inclusa no grid com auto-fit */
+
+@media (max-width: 576px) { 
+  .footer-grid {
+    gap: var(--spacing-lg); /* Aumenta o espaço no mobile */
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-legal {
+    margin-top: var(--spacing-sm);
+    justify-content: center;
+  }
+} 
