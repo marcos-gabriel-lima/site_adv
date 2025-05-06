@@ -1,0 +1,32 @@
+.areas-atuacao-page .section-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.areas-atuacao-page .section-header p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  max-width: 700px; /* Limita a largura do parágrafo do cabeçalho */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+}
+
+/* Estilos para garantir que os cards dentro do grid se comportem bem */
+.areas-grid .area-card {
+  height: 100%; /* Faz com que os cards tenham a mesma altura se o conteúdo variar */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ajuda a alinhar o botão 'Saiba mais' na parte inferior */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .areas-grid {
+    grid-template-columns: 1fr; /* Uma coluna em telas menores */
+  }
+} 

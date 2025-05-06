@@ -39,7 +39,7 @@ const Header = () => {
         <div className="logo">
           <Link to="/">
             {/* TODO: Adicionar logo real ou texto */}
-            <h1>Nome do Advogado</h1>
+            <h1>OS - Oziel Silva Advocacia</h1>
           </Link>
         </div>
         

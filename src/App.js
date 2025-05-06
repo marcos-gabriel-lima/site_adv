@@ -7,8 +7,10 @@ import Footer from './components/Footer/Footer';
 
 // Importação de páginas
 import Home from './pages/Home/Home';
-// ... outras páginas serão importadas aqui
+import Sobre from './pages/Sobre/Sobre';
+import AreasAtuacao from './pages/AreasAtuacao/AreasAtuacao';
 import Contato from './pages/Contato/Contato';
+import Faq from './pages/Faq/Faq';
 
 function App() {
   return (
@@ -21,11 +23,11 @@ function App() {
             <Route path="/" element={<Home />} /> 
             
             {/* Outras rotas virão aqui */}
-            {/* <Route path="/sobre" element={<Sobre />} /> */}
-            {/* <Route path="/areas-atuacao" element={<AreasAtuacao />} /> */}
+            <Route path="/sobre" element={<Sobre />} />
+            <Route path="/areas-atuacao" element={<AreasAtuacao />} />
             {/* <Route path="/blog" element={<Blog />} /> */}
             <Route path="/contato" element={<Contato />} />
-            {/* <Route path="/faq" element={<FAQ />} /> */}
+            <Route path="/faq" element={<Faq />} />
 
             {/* Rota de fallback (404) - pode ser criada depois */}
             {/* <Route path="*" element={<NotFound />} /> */}

@@ -12,11 +12,14 @@ body {
 
 :root {
   /* Variáveis de cores - personalize conforme sua identidade visual */
-  --primary-color: #2c3e50;
-  --secondary-color: #3498db;
-  --accent-color: #e74c3c;
-  --text-color: #333;
-  --light-text: #f8f9fa;
+  --black-color: #000000; /* Preto */
+  --gold-color: #FFD700; /* Dourado */
+
+  --primary-color: var(--black-color); /* Preto como primária */
+  --secondary-color: var(--gold-color); /* Dourado como secundária */
+  --accent-color: var(--gold-color); /* Dourado também como destaque */
+  --text-color: #333; /* Mantido para legibilidade geral em fundos claros */
+  --light-text: #f8f9fa; /* Mantido para texto em fundos escuros (preto/dourado) */
   --background-color: #ffffff;
   --light-background: #f8f9fa;
   --border-color: #e0e0e0;

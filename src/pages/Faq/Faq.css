@@ -1,0 +1,17 @@
+.faq-page .section-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.faq-page .section-header p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  max-width: 700px; /* Limita a largura do parágrafo do cabeçalho */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--spacing-md); /* Adiciona mais espaço abaixo do parágrafo do cabeçalho */
+}
+
+.faq-list {
+  max-width: 800px; /* Define uma largura máxima para a lista de FAQ */
+  margin: 0 auto; /* Centraliza a lista de FAQ */
+} 
