@@ -12,10 +12,43 @@ const Contato = () => {
         </div>
 
         <div className="contato-content">
-          {/* TODO: Adicionar informações de contato (telefone, email, endereço) aqui, talvez reutilizando a lógica da Home */}
-          <div className="contato-info-placeholder">
-             <h2>Informações de Contato</h2>
-             <p>(Telefone, Email, Endereço serão adicionados aqui)</p>
+          <div className="contato-detalhes">
+            <h2>Nossos Canais de Atendimento</h2>
+            <div className="detalhe-item">
+              <i className="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Endereço:</strong>
+                <p>Rua Malva Rosa, 220 - Jardim Muribeca</p>
+              </div>
+            </div>
+            <div className="detalhe-item">
+              <i className="fas fa-phone"></i>
+              <div>
+                <strong>Telefone:</strong>
+                <p><a href="tel:81993391492">(81) 99339-1492</a></p>
+              </div>
+            </div>
+            <div className="detalhe-item">
+              <i className="fas fa-envelope"></i>
+              <div>
+                <strong>E-mail:</strong>
+                <p><a href="mailto:Ozielhenrique.adv@outlook.com">Ozielhenrique.adv@outlook.com</a></p>
+              </div>
+            </div>
+            <div className="detalhe-item">
+              <i className="fas fa-clock"></i>
+              <div>
+                <strong>Horário de Atendimento:</strong>
+                <p>24h</p>
+              </div>
+            </div>
+            <div className="detalhe-item social-link-item">
+              <i className="fab fa-linkedin"></i>
+              <div>
+                <strong>LinkedIn:</strong>
+                <p><a href="https://www.linkedin.com/in/oziel-da-silva-a48a13128" target="_blank" rel="noopener noreferrer">Oziel Da Silva</a></p>
+              </div>
+            </div>
           </div>
 
           <FormContato />
