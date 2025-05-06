@@ -1,0 +1,41 @@
+.legal-page .section-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.legal-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.legal-content h3 {
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.legal-content p,
+.legal-content ul {
+  margin-bottom: var(--spacing-sm);
+  text-align: justify;
+}
+
+.legal-content ul {
+  list-style-position: inside;
+  padding-left: var(--spacing-sm);
+}
+
+.legal-content strong {
+  font-weight: 600;
+}
+
+.legal-content em {
+  color: var(--accent-color); /* Dourado para o texto em itálico de placeholder */
+  font-style: italic;
+  display: block; /* Para que o parágrafo de placeholder ocupe a linha toda */
+  padding: var(--spacing-sm);
+  background-color: var(--light-background);
+  border-left: 3px solid var(--accent-color);
+  margin-bottom: var(--spacing-md);
+} 

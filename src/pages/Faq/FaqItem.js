@@ -12,7 +12,9 @@ const FaqItem = ({ pergunta, resposta }) => {
     <div className={`faq-item ${isOpen ? 'open' : ''}`}>
       <button className="faq-pergunta" onClick={toggleOpen} aria-expanded={isOpen}>
         <span>{pergunta}</span>
-        <span className="faq-icon">{isOpen ? '−' : '+'}</span>
+        <span className="faq-icon">
+          {isOpen ? <i className="fas fa-minus"></i> : <i className="fas fa-plus"></i>}
+        </span>
       </button>
       {isOpen && (
         <div className="faq-resposta">

@@ -25,7 +25,8 @@
 
 .faq-pergunta:hover,
 .faq-pergunta:focus {
-  color: var(--secondary-color); /* Dourado no hover/focus */
+  color: #4A4A4A; /* Cinza escuro no hover/focus */
+  background-color: transparent; /* Garante que não haja fundo no hover/focus */
   outline: none;
 }
 

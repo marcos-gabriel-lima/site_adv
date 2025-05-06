@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
-// TODO: Adicionar ícones Font Awesome (se ainda não estiverem no projeto)
-// Você pode adicionar via CDN no public/index.html ou instalar como dependência
+// Font Awesome já está sendo carregado via CDN em public/index.html
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
