@@ -17,8 +17,8 @@ const Contato = () => {
             <div className="detalhe-item">
               <i className="fas fa-map-marker-alt"></i>
               <div>
-                <strong>Endereço:</strong>
-                <p>Rua Malva Rosa, 220 - Jardim Muribeca</p>
+                <strong>Local de Atendimento:</strong>
+                <p>Atendo em domicílio, no escritório da OAB ou em local de preferência do cliente. Para reuniões presenciais, utilizo as salas da OAB, garantindo conforto e privacidade.</p>
               </div>
             </div>
             <div className="detalhe-item">
