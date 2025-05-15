@@ -73,11 +73,13 @@ const Footer = () => {
           <div className="footer-contact">
             <h4>Contato</h4>
             <address>
-              <p><i className="fas fa-map-marker-alt"></i> Rua Malva Rosa, 220 - Jardim Muribeca</p>
-              {/* <p>Cidade - Estado, CEP 00000-000</p> */}{/* CEP não fornecido, pode ser adicionado depois */}
+              <p>
+                <i className="fas fa-map-marker-alt"></i>
+                Atendimento em domicílio, no escritório da OAB ou em local de preferência do cliente.
+              </p>
               <p><i className="fas fa-phone"></i> (81) 99339-1492</p>
               <p><i className="fas fa-envelope"></i> Ozielhenrique.adv@outlook.com</p>
-              <p><i className="fas fa-clock"></i> Atendimento 24h</p> {/* Adicionando horário de atendimento */}
+              <p><i className="fas fa-clock"></i> Atendimento 24h</p>
             </address>
           </div>
         </div>
