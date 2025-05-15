@@ -215,52 +215,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Seção Contato */}
-      <section className="section contato-section">
-        <div className="container">
-          <div className="contato-grid">
-            <div className="contato-info">
-              <h2>Vamos Conversar?</h2>
-              <p>Estamos prontos para ajudar você a resolver suas questões jurídicas. Entre em contato para agendar uma consulta.</p>
-              
-              <div className="contato-metodos">
-                <div className="contato-metodo">
-                  <i className="fas fa-phone" aria-hidden="true"></i>
-                  <div>
-                    <h3>Telefone</h3>
-                    {/* TODO: Usar telefone real */}
-                    <p><a href="tel:+5500000000000">(00) 00000-0000</a></p> 
-                  </div>
-                </div>
-                
-                <div className="contato-metodo">
-                  <i className="fas fa-envelope" aria-hidden="true"></i>
-                  <div>
-                    <h3>Email</h3>
-                    {/* TODO: Usar email real */}
-                    <p><a href="mailto:contato@advogado.com.br">contato@advogado.com.br</a></p> 
-                  </div>
-                </div>
-                
-                <div className="contato-metodo">
-                  <i className="fas fa-map-marker-alt" aria-hidden="true"></i>
-                  <div>
-                    <h3>Endereço</h3>
-                    {/* TODO: Usar endereço real */}
-                    <address>
-                      Rua Exemplo, 123 - Bairro<br />
-                      Cidade - Estado
-                    </address>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <FormContato className="home-form" />
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
