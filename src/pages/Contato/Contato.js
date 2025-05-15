@@ -49,6 +49,13 @@ const Contato = () => {
                 <p><a href="https://www.linkedin.com/in/oziel-da-silva-a48a13128" target="_blank" rel="noopener noreferrer">Oziel Da Silva</a></p>
               </div>
             </div>
+            <div className="detalhe-item social-link-item">
+              <i className="fab fa-instagram"></i>
+              <div>
+                <strong>Instagram:</strong>
+                <p><a href="https://www.instagram.com/ozielsilvaa_adv/" target="_blank" rel="noopener noreferrer">@ozielsilvaa_adv</a></p>
+              </div>
+            </div>
           </div>
 
           <FormContato />
